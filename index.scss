@@ -18,8 +18,9 @@ nav {
         justify-content: center;
         align-items: center;
 
-        p {
+        h1 {
             display: inline-block;
+            font-family: 'Teko', sans-serif;
         }
 
         img {
@@ -131,8 +132,10 @@ header {
             left: 15%;
         
             p {
+                font-family: 'Teko', sans-serif;
+                font-weight: 300;
+                font-size: 70px;
                 color: white;
-                font-size: 50px;
                 margin: 40px 0px;
             }
 
@@ -148,15 +151,13 @@ main {
     margin: 50px 0px;
 
     .sobreNosotros {
-        width: 80%;
         height: 70vh;
-        margin: 0px auto 40px auto;
+        margin-bottom: 40px;
         display: flex;
         justify-content: center;
 
         .sobreNosotrosTexto {
-            width: 50%;
-            height: 100%;
+            width: 40%;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -167,11 +168,12 @@ main {
     
                 h2 {
                     margin: 0px;
-                    font-size: 30px;
+                    font-size: 60px;
+                    font-family: 'Teko', sans-serif;
+                    font-weight: 300;
                 }
     
                 p {
-                    width: 100%;
                     font-size: 20px;
                     margin-top: 30px;
                     text-align: left;
@@ -180,8 +182,7 @@ main {
         }
 
         .imagen {
-            width: 50%;
-            height: 100%;
+            width: 40%;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -195,12 +196,13 @@ main {
     }
 
     .ropa {
-        width: 100%;
         height: 100vh;
         margin-bottom: 40px;
 
         h2 {
-            width: 100%;
+            font-family: 'Teko', sans-serif;
+            font-weight: 300;
+            font-size: 50px;
             height: 10%;
             display: flex;
             justify-content: center;
@@ -209,13 +211,12 @@ main {
         }
 
         .contenidoRopa {
-            width: 100%;
-            height: 90%;
             display: flex;
+            justify-content: center;
+            height: 90%;
 
             .ropaHombre {
-                width: 50%;
-                height: 100%;
+                width: 40%;
                 position: relative;
                 display: flex;
                 justify-content: center;
@@ -244,8 +245,7 @@ main {
             }
     
             .ropaMujer {
-                width: 50%;
-                height: 100%;
+                width: 40%;
                 position: relative;
                 display: flex;
                 justify-content: center;
@@ -283,7 +283,9 @@ main {
         min-height: 600px;
 
         h2 {
-            width: 100%;
+            font-family: 'Teko', sans-serif;
+            font-weight: 300;
+            font-size: 50px;
             height: 10%;
             display: flex;
             justify-content: center;
@@ -292,8 +294,9 @@ main {
         }
 
         .contenidoAccesoriosSkate {
-            width: 100%;
+            width: 80%;
             height: 90%;
+            margin: auto;
 
             .accesorios {
                 width: 100%;
@@ -360,7 +363,9 @@ main {
 
     .contactenos {
         h2 {
-            width: 100%;
+            font-family: 'Teko', sans-serif;
+            font-weight: 300;
+            font-size: 50px;
             height: 10vh;
             display: flex;
             justify-content: center;
@@ -369,17 +374,17 @@ main {
         }
 
         .contenidoContacto {
-            width: 100%;
             display: flex;
+            justify-content: center;
 
             .llamanos {
-                width: 40%;
+                width: 30%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
 
                 .llamanosCont {
-                    width: 60%;
+                    width: 70%;
 
                     h3 {
                         text-align: center;
@@ -404,7 +409,7 @@ main {
             }
 
             .siguenos {
-                width: 60%;
+                width: 50%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -428,7 +433,6 @@ main {
 
 footer {
     background-color: rgb(100, 100, 100);
-    width: 100%;
     height: 100px;
     display: flex;
     justify-content: center;
@@ -436,7 +440,7 @@ footer {
 
     .copyright {
         color: white;
-        font-size: 20px;
+        font-size: 17px;
         display: inline-block;
     }
 }
