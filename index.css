@@ -8,7 +8,7 @@ nav {
   width: 100%;
   height: 70px;
   align-items: center;
-  background-color: #a0a0a0;
+  background-color: #168aad;
   position: fixed;
   z-index: 100;
 }
@@ -19,6 +19,7 @@ nav .logo {
   align-items: center;
 }
 nav .logo h1 {
+  color: whitesmoke;
   display: inline-block;
   font-family: "Teko", sans-serif;
 }
@@ -44,7 +45,8 @@ nav .menu > ul > li > a {
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  color: black;
+  color: whitesmoke;
+  font-size: 18px;
   height: 70px;
   padding: 0px 25px;
 }
@@ -59,22 +61,23 @@ nav .menu > ul > li .submenu ul {
 }
 nav .menu > ul > li .submenu ul li {
   list-style: none;
-  background-color: #a0a0a0;
+  background-color: #168aad;
   display: block;
 }
 nav .menu > ul > li .submenu ul li a {
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: black;
+  color: whitesmoke;
+  font-size: 18px;
   height: 50px;
   padding: 0 20px;
 }
 nav .menu > ul > li .submenu ul li:hover {
-  background-color: #7e7e7e;
+  background-color: #1a759f;
 }
 nav .menu > ul > li:hover {
-  background-color: #7e7e7e;
+  background-color: #1a759f;
 }
 nav .menu > ul > li:hover .submenu {
   display: block;
@@ -89,6 +92,7 @@ nav .buscador img {
   width: 30px;
 }
 nav .buscador p {
+  color: whitesmoke;
   display: inline-block;
   margin: 0px 10px;
 }
@@ -120,12 +124,22 @@ header .banner .descripcion p {
   margin: 40px 0px;
 }
 header .banner .descripcion button {
-  padding: 10px 40px;
-  font-size: 17px;
+  background-color: #168aad88;
+  padding: 15px 60px;
+  border: 2px solid #168aad;
+  border-radius: 10px;
+  color: whitesmoke;
+  font-size: 25px;
+}
+header .banner .descripcion button:hover {
+  background-color: #168aad;
+}
+header .banner .descripcion button:active {
+  background-color: #609bad;
 }
 
 main {
-  margin: 50px 0px;
+  margin: 50px 0px 0px 0px;
 }
 main .sobreNosotros {
   height: 70vh;
@@ -166,14 +180,17 @@ main .sobreNosotros .imagen img {
   object-fit: cover;
 }
 main .ropa {
-  height: 100vh;
+  background-color: #1a759f;
+  height: 80vh;
+  padding: 30px 0px;
   margin-bottom: 40px;
 }
 main .ropa h2 {
+  color: whitesmoke;
   font-family: "Teko", sans-serif;
   font-weight: 300;
   font-size: 50px;
-  height: 10%;
+  height: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -182,18 +199,23 @@ main .ropa h2 {
 main .ropa .contenidoRopa {
   display: flex;
   justify-content: center;
-  height: 90%;
+  height: 70vh;
 }
 main .ropa .contenidoRopa .ropaHombre {
   width: 40%;
+  height: 100%;
+  overflow: hidden;
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 main .ropa .contenidoRopa .ropaHombre img {
-  height: 100%;
+  filter: brightness(70%);
+  width: 90%;
   position: absolute;
+}
+main .ropa .contenidoRopa .ropaHombre img:hover {
+  filter: brightness(100%);
 }
 main .ropa .contenidoRopa .ropaHombre .explorarRopaHombre {
   position: absolute;
@@ -205,19 +227,34 @@ main .ropa .contenidoRopa .ropaHombre .explorarRopaHombre p {
   font-size: 30px;
 }
 main .ropa .contenidoRopa .ropaHombre .explorarRopaHombre button {
-  font-size: 17px;
-  padding: 5px 30px;
+  background-color: #168aad88;
+  padding: 10px 40px;
+  border: 2px solid #168aad;
+  border-radius: 10px;
+  color: whitesmoke;
+  font-size: 18px;
+}
+main .ropa .contenidoRopa .ropaHombre .explorarRopaHombre button:hover {
+  background-color: #168aad;
+}
+main .ropa .contenidoRopa .ropaHombre .explorarRopaHombre button:active {
+  background-color: #609bad;
 }
 main .ropa .contenidoRopa .ropaMujer {
   width: 40%;
+  height: 100%;
+  overflow: hidden;
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 main .ropa .contenidoRopa .ropaMujer img {
-  height: 100%;
+  filter: brightness(70%);
+  width: 90%;
   position: absolute;
+}
+main .ropa .contenidoRopa .ropaMujer img:hover {
+  filter: brightness(100%);
 }
 main .ropa .contenidoRopa .ropaMujer .explorarRopaMujer {
   position: absolute;
@@ -229,8 +266,18 @@ main .ropa .contenidoRopa .ropaMujer .explorarRopaMujer p {
   font-size: 30px;
 }
 main .ropa .contenidoRopa .ropaMujer .explorarRopaMujer button {
-  font-size: 17px;
-  padding: 5px 30px;
+  background-color: #168aad88;
+  padding: 10px 40px;
+  border: 2px solid #168aad;
+  border-radius: 10px;
+  color: whitesmoke;
+  font-size: 18px;
+}
+main .ropa .contenidoRopa .ropaMujer .explorarRopaMujer button:hover {
+  background-color: #168aad;
+}
+main .ropa .contenidoRopa .ropaMujer .explorarRopaMujer button:active {
+  background-color: #609bad;
 }
 main .accesoriosSkates {
   width: 100%;
@@ -242,7 +289,7 @@ main .accesoriosSkates h2 {
   font-family: "Teko", sans-serif;
   font-weight: 300;
   font-size: 50px;
-  height: 10%;
+  height: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -250,7 +297,7 @@ main .accesoriosSkates h2 {
 }
 main .accesoriosSkates .contenidoAccesoriosSkate {
   width: 80%;
-  height: 90%;
+  height: 90vh;
   margin: auto;
 }
 main .accesoriosSkates .contenidoAccesoriosSkate .accesorios {
@@ -276,7 +323,7 @@ main .accesoriosSkates .contenidoAccesoriosSkate .accesorios .accesoriosTexto .t
   width: 400px;
   font-size: 23px;
   padding: 10px 40px;
-  border-left: 5px solid #8f8f8f;
+  border-left: 5px solid #1a759f;
 }
 main .accesoriosSkates .contenidoAccesoriosSkate .skates {
   width: 100%;
@@ -294,7 +341,7 @@ main .accesoriosSkates .contenidoAccesoriosSkate .skates .skatesTexto .texto {
   text-align: end;
   font-size: 23px;
   padding: 10px 40px;
-  border-right: 5px solid #8f8f8f;
+  border-right: 5px solid #1a759f;
 }
 main .accesoriosSkates .contenidoAccesoriosSkate .skates .skatesImagen {
   width: 50%;
@@ -304,10 +351,15 @@ main .accesoriosSkates .contenidoAccesoriosSkate .skates .skatesImagen img {
   height: 100%;
   object-fit: cover;
 }
+main .contactenos {
+  background-color: #1a759f;
+  padding: 30px 0px;
+}
 main .contactenos h2 {
   font-family: "Teko", sans-serif;
   font-weight: 300;
   font-size: 50px;
+  color: whitesmoke;
   height: 10vh;
   display: flex;
   justify-content: center;
@@ -317,9 +369,10 @@ main .contactenos h2 {
 main .contactenos .contenidoContacto {
   display: flex;
   justify-content: center;
+  margin-bottom: 30px;
 }
 main .contactenos .contenidoContacto .llamanos {
-  width: 30%;
+  width: 35%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -344,7 +397,7 @@ main .contactenos .contenidoContacto .llamanos .llamanosCont .numero a {
   font-size: 30px;
 }
 main .contactenos .contenidoContacto .siguenos {
-  width: 50%;
+  width: 45%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -358,7 +411,7 @@ main .contactenos .contenidoContacto .siguenos .siguenosCont .redesSociales img 
 }
 
 footer {
-  background-color: #646464;
+  background-color: #343a40;
   height: 100px;
   display: flex;
   justify-content: center;
