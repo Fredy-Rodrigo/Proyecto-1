@@ -14,9 +14,22 @@ nav {
 }
 nav .logo {
   width: 20%;
+  height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+nav .logo .menu-desplegable {
+  display: none;
+}
+nav .logo .menu-desplegable input {
+  display: none;
+}
+nav .logo .menu-desplegable label {
+  cursor: pointer;
+}
+nav .logo .menu-desplegable .menu-desp-items {
+  display: none;
 }
 nav .logo h1 {
   color: whitesmoke;
@@ -78,6 +91,7 @@ nav .menu > ul > li .submenu ul li:hover {
 }
 nav .menu > ul > li:hover {
   background-color: #1a759f;
+  border-bottom: 2px solid whitesmoke;
 }
 nav .menu > ul > li:hover .submenu {
   display: block;
@@ -130,6 +144,7 @@ header .banner .descripcion button {
   border-radius: 10px;
   color: whitesmoke;
   font-size: 25px;
+  transition: background-color 0.08s linear;
 }
 header .banner .descripcion button:hover {
   background-color: #168aad;
@@ -213,6 +228,7 @@ main .ropa .contenidoRopa .ropaHombre img {
   filter: brightness(70%);
   width: 90%;
   position: absolute;
+  transition: filter 0.1s linear;
 }
 main .ropa .contenidoRopa .ropaHombre img:hover {
   filter: brightness(100%);
@@ -233,6 +249,7 @@ main .ropa .contenidoRopa .ropaHombre .explorarRopaHombre button {
   border-radius: 10px;
   color: whitesmoke;
   font-size: 18px;
+  transition: background-color 0.08s linear;
 }
 main .ropa .contenidoRopa .ropaHombre .explorarRopaHombre button:hover {
   background-color: #168aad;
@@ -252,6 +269,7 @@ main .ropa .contenidoRopa .ropaMujer img {
   filter: brightness(70%);
   width: 90%;
   position: absolute;
+  transition: filter 0.1s linear;
 }
 main .ropa .contenidoRopa .ropaMujer img:hover {
   filter: brightness(100%);
@@ -272,6 +290,7 @@ main .ropa .contenidoRopa .ropaMujer .explorarRopaMujer button {
   border-radius: 10px;
   color: whitesmoke;
   font-size: 18px;
+  transition: background-color 0.08s linear;
 }
 main .ropa .contenidoRopa .ropaMujer .explorarRopaMujer button:hover {
   background-color: #168aad;
@@ -382,6 +401,7 @@ main .contactenos .contenidoContacto .llamanos .llamanosCont {
 }
 main .contactenos .contenidoContacto .llamanos .llamanosCont h3 {
   text-align: center;
+  font-size: 25px;
 }
 main .contactenos .contenidoContacto .llamanos .llamanosCont .numero {
   display: flex;
@@ -393,6 +413,7 @@ main .contactenos .contenidoContacto .llamanos .llamanosCont .numero img {
   margin: 0px 20px;
 }
 main .contactenos .contenidoContacto .llamanos .llamanosCont .numero a {
+  color: whitesmoke;
   text-decoration: none;
   font-size: 30px;
 }
@@ -404,6 +425,7 @@ main .contactenos .contenidoContacto .siguenos {
 }
 main .contactenos .contenidoContacto .siguenos .siguenosCont h3 {
   text-align: center;
+  font-size: 25px;
 }
 main .contactenos .contenidoContacto .siguenos .siguenosCont .redesSociales img {
   width: 50px;
@@ -421,6 +443,97 @@ footer .copyright {
   color: white;
   font-size: 17px;
   display: inline-block;
+}
+
+@media screen and (max-width: 1024px) {
+  nav .logo {
+    width: 25%;
+  }
+  nav .menu {
+    width: 60%;
+  }
+  nav .menu > ul > li > a {
+    padding: 0px 20px;
+  }
+  nav .buscador {
+    width: 15%;
+  }
+}
+@media screen and (max-width: 900px) {
+  nav .logo {
+    width: 80%;
+    justify-content: start;
+  }
+  nav .logo .menu-desplegable {
+    display: block;
+    margin-left: 15px;
+  }
+  nav .logo .menu-desplegable span {
+    padding: 10px;
+    font-size: 35px;
+  }
+  nav .logo .menu-desplegable .menu-desp-items {
+    display: block;
+    position: absolute;
+    width: 300px;
+    top: 70px;
+    left: -300px;
+    transition: all 0.3s ease-in-out;
+  }
+  nav .logo .menu-desplegable .menu-desp-items ul {
+    margin: 0px;
+    padding: 0px;
+  }
+  nav .logo .menu-desplegable .menu-desp-items ul li {
+    list-style: none;
+    background-color: #168aad;
+    display: block;
+    border-top: 1px solid whitesmoke;
+  }
+  nav .logo .menu-desplegable .menu-desp-items ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 18px;
+    height: 60px;
+  }
+  nav .logo .menu-desplegable .menu-desp-items ul li:hover {
+    background-color: #1a759f;
+  }
+  nav .logo .menu-desplegable #boton-menu:checked ~ .menu-desp-items {
+    left: 0;
+  }
+  nav .logo h1, nav .logo img {
+    display: none;
+  }
+  nav .menu {
+    display: none;
+  }
+  nav .buscador {
+    width: 20%;
+  }
+
+  main .sobreNosotros {
+    display: block;
+  }
+  main .sobreNosotros .sobreNosotrosTexto {
+    width: 100%;
+  }
+  main .sobreNosotros .imagen {
+    width: 100%;
+  }
+  main .sobreNosotros .imagen img {
+    width: 40%;
+    height: 200px;
+    object-fit: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  nav .buscador p {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

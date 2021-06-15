@@ -14,9 +14,27 @@ nav {
 
     .logo {
         width: 20%;
+        height: 70px;
         display: flex;
         justify-content: center;
         align-items: center;
+
+        .menu-desplegable {
+            display: none;
+
+            input {
+                display: none;
+            }
+
+            label {
+                cursor: pointer;
+            }
+
+            .menu-desp-items {
+                display: none;
+            }
+
+        }
 
         h1 {
             color: whitesmoke;
@@ -88,6 +106,7 @@ nav {
 
             > li:hover {
                 background-color: #1a759f;
+                border-bottom: 2px solid whitesmoke;
             }
 
             > li:hover .submenu {
@@ -150,6 +169,7 @@ header {
                 border-radius: 10px;
                 color: whitesmoke;
                 font-size: 25px;
+                transition: background-color 0.08s linear;
             }
             
             button:hover {
@@ -246,6 +266,7 @@ main {
                     filter: brightness(70%);
                     width: 90%;
                     position: absolute;
+                    transition: filter 0.1s linear;
                 }
 
                 img:hover {
@@ -269,6 +290,7 @@ main {
                         border-radius: 10px;
                         color: whitesmoke;
                         font-size: 18px;
+                        transition: background-color 0.08s linear;
                     }
 
                     button:hover {
@@ -293,6 +315,7 @@ main {
                     filter: brightness(70%);
                     width: 90%;
                     position: absolute;
+                    transition: filter 0.1s linear;
                 }
 
                 img:hover {
@@ -316,6 +339,7 @@ main {
                         border-radius: 10px;
                         color: whitesmoke;
                         font-size: 18px;
+                        transition: background-color 0.08s linear;
                     }
 
                     button:hover {
@@ -448,6 +472,7 @@ main {
 
                     h3 {
                         text-align: center;
+                        font-size: 25px;
                     }
 
                     .numero {
@@ -461,6 +486,7 @@ main {
                         }
 
                         a {
+                            color: whitesmoke;
                             text-decoration: none;
                             font-size: 30px;
                         }
@@ -477,6 +503,7 @@ main {
                 .siguenosCont {
                     h3 {
                         text-align: center;
+                        font-size: 25px;
                     }
 
                     .redesSociales {
@@ -502,5 +529,125 @@ footer {
         color: white;
         font-size: 17px;
         display: inline-block;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    nav {
+        .logo {
+            width: 25%;
+        }
+
+        .menu {
+            width: 60%;
+
+            > ul > li > a {
+                padding: 0px 20px;
+            }
+        }
+
+        .buscador {
+            width: 15%;
+        }
+    }
+}
+
+@media screen and (max-width:900px) {
+    nav {
+        .logo {
+            width: 80%;
+            justify-content: start;
+
+            .menu-desplegable {
+                display: block;
+                margin-left: 15px;
+
+                span {
+                    padding: 10px;
+                    font-size: 35px;
+                }
+
+                .menu-desp-items {
+                    display: block;
+                    position: absolute;
+                    width: 300px;
+                    top: 70px;
+                    left: -300px;
+                    transition: all 0.3s ease-in-out;
+
+                    ul {
+                        margin: 0px;
+                        padding: 0px;
+
+                        li {
+                            list-style: none;
+                            background-color: #168aad;
+                            display: block;
+                            border-top: 1px solid whitesmoke;
+
+                            a {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                text-decoration: none;
+                                color: whitesmoke;
+                                font-size: 18px;
+                                height: 60px;
+                            }
+                        }
+
+                        li:hover {
+                            background-color: #1a759f;
+                        }
+                    }
+                }
+
+                #boton-menu:checked ~ .menu-desp-items {
+                    left: 0;
+                }
+            }
+
+            h1, img {
+                display: none;
+            }
+        }
+
+        .menu {
+            display: none;
+        }
+
+        .buscador {
+            width: 20%;
+        }
+    }
+
+    main {
+        .sobreNosotros {
+            display: block;
+
+            .sobreNosotrosTexto {
+                width: 100%;
+            }
+
+            .imagen {
+                width: 100%;
+
+                img {
+                    width: 40%;
+                    height: 200px;
+                    object-fit: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:600px) {
+    nav {
+        .buscador {
+            p {
+                display: none;
+            }
+        }
     }
 }
