@@ -224,7 +224,7 @@ main {
             justify-content: center;
 
             img {
-                width: 70%;
+                width: 370px;
                 height: 100%;
                 object-fit: cover;
             }
@@ -274,6 +274,7 @@ main {
                 }
     
                 .explorarRopaHombre {
+                    width: 90%;
                     position: absolute;
                     text-align: center;
                     bottom: 10%;
@@ -323,6 +324,7 @@ main {
                 }
     
                 .explorarRopaMujer {
+                    width: 90%;
                     position: absolute;
                     text-align: center;
                     bottom: 10%;
@@ -482,7 +484,7 @@ main {
 
                         img {
                             width: 30px;
-                            margin: 0px 20px;
+                            margin-right: 20px;
                         }
 
                         a {
@@ -526,11 +528,20 @@ footer {
     align-items: center;
 
     .copyright {
+        width: 70%;
+        text-align: center;
         color: white;
         font-size: 17px;
-        display: inline-block;
     }
 }
+
+
+
+
+
+
+
+
 
 @media screen and (max-width:1024px) {
     nav {
@@ -548,6 +559,41 @@ footer {
 
         .buscador {
             width: 15%;
+        }
+    }
+
+    main {
+
+        .accesoriosSkates {
+            height: 90vh;
+
+            .contenidoAccesoriosSkate {
+                height: 80vh;
+
+                .accesorios {
+
+                    .accesoriosTexto {
+
+                        .texto {
+                            width: 300px;
+                            font-size: 20px;
+                            padding: 10px 20px;
+                        }
+                    }
+                }
+
+                .skates {
+
+                    .skatesTexto {
+
+                        .texto {
+                            width: 300px;
+                            font-size: 20px;
+                            padding: 10px 20px;
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -624,18 +670,119 @@ footer {
     main {
         .sobreNosotros {
             display: block;
+            height: 100vh;
 
             .sobreNosotrosTexto {
                 width: 100%;
+                height: 40vh;
+
+                .texto {
+                    p {
+                        margin-top: 0px;
+                        text-align: justify;
+                    }
+                }
             }
 
             .imagen {
                 width: 100%;
+                height: 60vh;
 
                 img {
+                    width: 340px;
+                    height: 100%;
+                }
+            }
+        }
+
+        .ropa {
+            height: 150vh;
+
+            .contenidoRopa {
+                height: 140vh;
+                display: block;
+
+                .ropaHombre {
+                    width: 100%;
+                    height: 47%;
+                    margin-bottom: 5%;
+
+                    img {
+                        width: 60%;
+                    }
+
+                    .explorarRopaHombre {
+                        width: 50%;
+                    }
+                }
+
+                .ropaMujer {
+                    width: 100%;
+                    height: 47%;
+
+                    img {
+                        width: 60%;
+                    }
+
+                    .explorarRopaMujer {
+                        width: 50%;
+                    }
+                }
+            }
+        }
+
+        .accesoriosSkates {
+            height: 150vh;
+
+            .contenidoAccesoriosSkate {
+                height: 140vh;
+
+                .accesorios {
+                    flex-direction: column;
+                    align-items: center;
+
+                    .accesoriosImagen {
+                        width: 70%;
+                        height: 50%;
+                    }
+
+                    .accesoriosTexto {
+                        width: 70%;
+                        height: 50%;
+                    }
+                }
+
+                .skates {
+                    flex-direction: column-reverse;
+                    align-items: center;
+
+                    .skatesImagen {
+                        width: 70%;
+                        height: 50%;
+                    }
+
+                    .skatesTexto {
+                        width: 70%;
+                        height: 50%;
+                    }
+                }
+            }
+        }
+
+        .contactenos {
+
+            .contenidoContacto {
+
+                .llamanos {
                     width: 40%;
-                    height: 200px;
-                    object-fit: none;
+                }
+
+                .siguenos {
+                    width: 50%;
+
+                    .siguenosCont .redesSociales img {
+                        width: 40px;
+                    }
                 }
             }
         }
@@ -648,6 +795,264 @@ footer {
             p {
                 display: none;
             }
+        }
+    }
+
+    header {
+
+        .banner .descripcion {
+            left: auto;
+
+            p {
+                font-size: 60px;
+            }
+        }
+    }
+
+    main {
+        .sobreNosotros {
+
+            .sobreNosotrosTexto {
+
+                .texto {
+
+                    h2 {
+                        font-size: 50px;
+                    }
+
+                    p{
+                        font-size: 18px;
+                    }
+                }
+            }
+
+            .imagen {
+                
+                img {
+                    width: 300px;
+                }
+            }
+        }
+
+        .accesoriosSkates {
+
+            .contenidoAccesoriosSkate {
+
+                .accesorios {
+
+                    .accesoriosTexto {
+                        width: 80%;
+                    }
+
+                    .accesoriosImagen {
+                        width: 80%;
+                    }
+                }
+
+                .skates {
+
+                    .skatesImagen {
+                        width: 80%;
+                    }
+
+                    .skatesTexto {
+                        width: 80%;
+                    }
+                }
+            }
+        }
+
+        .contactenos {
+
+            .contenidoContacto {
+                flex-direction: column;
+                align-items: center;
+
+                .llamanos {
+                    width: 90%;
+                }
+
+                .siguenos {
+                    width: 90%;
+                }
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width:480px) {
+    main {
+        .sobreNosotros {
+            height: 90vh;
+
+            .sobreNosotrosTexto {
+
+                .texto {
+
+                    h2 {
+                        font-size: 40px;
+                    }
+
+                    p {
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            .imagen {
+                height: 50vh;
+                img {
+                    width: 230px;
+                }
+            }
+        }
+
+        .ropa {
+
+            .contenidoRopa {
+
+                .ropaHombre {
+
+                    img {
+                        width: 70%;
+                    }
+
+                    .explorarRopaHombre {
+
+                        p {
+                            font-size: 25px;
+                        }
+                    }
+                }
+
+                .ropaMujer {
+
+                    img {
+                        width: 70%;
+                    }
+
+                    .explorarRopaMujer {
+
+                        p {
+                            font-size: 25px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .contactenos {
+
+            .contenidoContacto {
+
+                .llamanos .llamanosCont .numero a {
+                    font-size: 25px;
+                }
+
+                .siguenos .siguenosCont .redesSociales img {
+                    width: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:320px) {
+    main {
+        .sobreNosotros {
+            height: 100vh;
+
+            .sobreNosotrosTexto {
+                height: 50vh;
+            }
+        }
+
+        .ropa {
+            height: 145vh;
+
+            .contenidoRopa {
+
+                .ropaHombre {
+
+                    img {
+                        width: 80%;
+                    }
+
+                    .explorarRopaHombre {
+                        bottom: 30px;
+
+                        p {
+                            font-size: 20px;
+                        }
+                    }
+                }
+
+                .ropaMujer {
+
+                    img {
+                        width: 80%;
+                    }
+
+                    .explorarRopaMujer {
+                        bottom: 30px;
+
+                        p {
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .accesoriosSkates {
+            height: 120vh;
+
+            .contenidoAccesoriosSkate {
+                height: 110vh;
+
+                .accesorios {
+
+                    .accesoriosImagen {
+                        height: 55%;
+                        width: 90%;
+                    }
+
+                    .accesoriosTexto {
+                        height: 40%;
+                        width: 90%;
+
+                        .texto {
+                            font-size: 16px;
+                            padding: 0px 20px;
+                        }
+                    }
+                }
+
+                .skates {
+                    .skatesImagen {
+                        height: 55%;
+                        width: 90%;
+                    }
+
+                    .skatesTexto {
+                        height: 40%;
+                        width: 90%;
+
+                        .texto {
+                            font-size: 16px;
+                            padding: 0px 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+
+        .copyright {
+            font-size: 16px;
         }
     }
 }
