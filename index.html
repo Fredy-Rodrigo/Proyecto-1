@@ -34,9 +34,9 @@
         </div>
         <div class="menu">
             <ul>
-                <li><a href="#">Inicio</a></li>
+                <li><a href="javascript:scroll('seccion1')">Inicio</a></li>
                 <li>
-                    <a href="#">Ropa</a>
+                    <a href="javascript:scroll('seccion2')">Ropa</a>
                     <div class=" submenu submenuRopa">
                         <ul>
                             <li><a href="#">Para hombre</a></li>
@@ -45,7 +45,7 @@
                     </div>
                 </li>
                 <li>
-                    <a href="#">Accesorios</a>
+                    <a href="javascript:scroll('seccion3')">Accesorios</a>
                     <div class="submenu submenuAccesorios">
                         <ul>
                             <li><a href="#">Gorras</a></li>
@@ -55,7 +55,7 @@
                     </div>
                 </li>
                 <li>
-                    <a href="#">Skates</a>
+                    <a href="javascript:scroll('seccion4')">Skates</a>
                     <div class="submenu submenuSkates">
                         <ul>
                             <li><a href="#">Tablas</a></li>
@@ -65,7 +65,7 @@
                         </ul>
                     </div>
                 </li>
-                <li><a href="#">Contáctenos</a></li>
+                <li><a href="javascript:scroll('seccion5')">Contáctenos</a></li>
             </ul>
         </div>
         <div class="buscador">
@@ -74,7 +74,7 @@
         </div>
     </nav>
     <header>
-        <div class="banner">
+        <div class="banner" id="seccion1">
             <video autoplay loop>
                 <source src="imagenes/banner.mp4" type="video/mp4">
             </video>
@@ -97,7 +97,7 @@
             </div>
         </section>
 
-        <section class="ropa">
+        <section class="ropa" id="seccion2">
             <h2>ROPA</h2>
 
             <div class="contenidoRopa">
@@ -121,7 +121,7 @@
         <section class="accesoriosSkates">
             <h2>ACCESORIOS Y SKATE</h2>
             <div class="contenidoAccesoriosSkate">
-                <div class="accesorios">
+                <div class="accesorios" id="seccion3">
                     <div class="accesoriosImagen">
                         <img src="imagenes/accesorios.jpg" alt="accesorios">
                     </div>
@@ -132,7 +132,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="skates">
+                <div class="skates" id="seccion4">
                     <div class="skatesTexto">
                         <div class="texto">
                             <h3>Skateboard</h3>
@@ -146,7 +146,7 @@
             </div>
         </section>
 
-        <section class="contactenos">
+        <section class="contactenos" id="seccion5">
             <h2>CONTACTENOS</h2>
             <div class="contenidoContacto">
                 <div class="llamanos">
